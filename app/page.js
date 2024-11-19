@@ -1,3 +1,4 @@
+require('dotenv').config()
 import React from "react";
 import Header from './components/Header'
 import TournamentEntry from "./components/TournamentEntry"
