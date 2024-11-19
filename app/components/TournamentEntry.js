@@ -50,11 +50,10 @@ const TournamentEntry = () => {
             }
         `
         var tourneySlug = convertToSlug(tourney)
-        var key = process.env.REACT_APP_API_KEY
         fetch("https://api.start.gg/gql/alpha", {
             method: "POST",
             headers: {
-                "Authorization": key,
+                "Authorization": 'Bearer 29a05f1eb3c2c0a22554a46324f19b61',
                 "Content-Type":"application/json",
                 "Accept":"application/json"
             },
