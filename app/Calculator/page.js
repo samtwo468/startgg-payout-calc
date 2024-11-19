@@ -6,6 +6,8 @@ import Header from "../components/Header"
 import PrizeBox from "../components/PrizeBox"
 
 const Calculator = () => {
+    
+    if (typeof window !== "undefined") {
 
     const tourneyData = JSON.parse(localStorage.getItem("tourneyData"))
     const [event, setEvent] = useState(0)
@@ -209,6 +211,9 @@ const Calculator = () => {
         }
     }, [])
 
+    } // consts and functions
+
+    if (typeof window === "undefined") return null
     return (
         <div>
             <Header></Header>
