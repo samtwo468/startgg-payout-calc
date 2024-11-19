@@ -7,9 +7,11 @@ import PrizeBox from "../components/PrizeBox"
 
 const Calculator = () => {
     
-    if (typeof window !== "undefined") {
+    if (typeof window === "undefined") return <p>Error: Viewing from Server</p>
 
     const tourneyData = JSON.parse(localStorage.getItem("tourneyData"))
+    const [entrants, setEntrants] = useState(tourneyData.tournament.events[0].numEntrants)
+
     const [event, setEvent] = useState(0)
 
     const [eventOp1, setEventOp1] = useState("")
@@ -25,8 +27,6 @@ const Calculator = () => {
 
     const [entry, setEntry] = useState(5)
     const [numDQs, setNumDQs] = useState(0)
-
-    const [entrants, setEntrants] = useState(tourneyData.tournament.events[0].numEntrants)
 
     const [firstPrize, setFirstPrize] = useState(0)
     const [secondPrize, setSecondPrize] = useState(0)
@@ -211,9 +211,7 @@ const Calculator = () => {
         }
     }, [])
 
-    } // consts and functions
 
-    if (typeof window === "undefined") return null
     return (
         <div>
             <Header></Header>
