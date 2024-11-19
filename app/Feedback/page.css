@@ -1,0 +1,11 @@
+#message {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#message text {
+    text-align: center;
+    margin: 10%;
+    font-size: 26px;
+}

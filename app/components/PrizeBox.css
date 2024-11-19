@@ -1,0 +1,15 @@
+#master {
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.checkbox {
+    width: 15px;
+    height: 15px;
+    margin: 0px 5px;
+}
+
+.textbox {
+    width: 100px;
+}

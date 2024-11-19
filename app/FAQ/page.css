@@ -1,0 +1,23 @@
+#slug {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0px 0px 0px 0px;
+}
+
+#slug {
+    text-align: left;
+    line-height: 1.75;
+    margin: 20px;
+    font-size: 20px;
+}
+
+p.title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.questionBreak {
+    border: 1px solid black;
+}
